@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="onlinecarrental.View.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <a class="navbar-brand" href="#">SSA Car Rental Service</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home </span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Cars.aspx">Car</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Customer.aspx">Customer</a>
+      </li>
+        <li class="nav-item">
+     <a class="nav-link" href="Rents.aspx"> Rentals</a>
+      </li>
+      <li class="nav-item">
+    <a class="nav-link" href="Returns.aspx">Returns</a>
+       </li>
+          <li class="nav-item">
+<a class="nav-link" href="Discount.aspx">Discount</a>
+   </li>
+          <li class="nav-item">
+<a class="nav-link" href="Report.aspx">Report</a>
+   </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    <asp:ContentPlaceHolder ID="mybody" runat="server">
+</asp:ContentPlaceHolder>
+
+
+   
+</body>
+</html>
