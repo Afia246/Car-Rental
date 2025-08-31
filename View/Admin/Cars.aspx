@@ -24,7 +24,7 @@
 
   <div class="form-group">
     <label for="exampleInputEmail1">Brand</label>
-    <input type="text" class="form-control" id="BrantTb" placeholder="Enter The Car's Brand:" runat="server">
+    <input type="text" class="form-control" id="BrandTb" placeholder="Enter The Car's Brand:" runat="server">
   
   </div>
 
@@ -69,16 +69,11 @@
 
 <br />
 
-
-  <button type="submit" class="btn btn-primary ">Edit</button>
-  <button type="submit" class="btn btn-primary ">Add</button>
-
-  <button type="submit" class="btn btn-danger ">Delete</button>
-
-
-
-
-
+  <label id ="ErrorMsg" runat="server"></label>
+  <asp:Button type="submit" id="EditBtn" class="btn btn-primary " Text = "Edit" runat= "server" />
+  <asp:Button type="submit" id="SaveBtn" class="btn btn-primary " Text = "Save" runat= "server" />
+  <asp:Button type="submit" id="DeleteBtn" class="btn btn-primary " Text = "Delete" runat= "server" />
+  
 </form>
 
 
