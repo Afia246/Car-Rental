@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assets",
+    "\\Assets\\Img",
+    "\\Models",
+    "\\obj",
+    "\\Properties",
+    "\\View",
+    "\\View\\Admin"
   ],
-  "SelectedNode": "\\C:\\Users\\ASUS\\Source\\Repos\\Car-Rental",
+  "SelectedNode": "\\View\\Admin\\Customer.aspx.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="onlinecarrental.View.Admin.Cars" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="onlinecarrental.View.Admin.Cars" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="mybody" runat="server">
 
 
@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col"></div>
                     <h3 class="text-primary">Manage Cars</h3>
-                    <div class="col"><img src="../../Assets/Img/Car-PNG-Clipart.png" height="150px"</div>
+                    <div class="col"><img src="../../Assets/Img/Car-PNG-Clipart.png" height="150px" /></div>
                     <div class="col"></div>
                 </div>
                 <div class="row">
@@ -64,15 +64,15 @@
    
   </div>
 
+
+
+
 <br />
 
-
-<br />
-
-  <label id ="ErrorMsg" runat="server"></label>
-  <asp:Button type="submit" id="EditBtn" class="btn btn-primary " Text = "Edit" runat= "server" />
-  <asp:Button type="submit" id="SaveBtn" class="btn btn-primary " Text = "Save" runat= "server" />
-  <asp:Button type="submit" id="DeleteBtn" class="btn btn-primary " Text = "Delete" runat= "server" />
+  <label id ="ErrorMsg" runat="server" class="text-danger"></label><br />
+  <asp:Button type="submit" id="EditBtn" class="btn btn-danger " Text = "Edit" runat= "server" OnClick="EdiBtn_Click" />
+  <asp:Button type="submit" id="SaveBtn" class="btn btn-danger " Text = "Save" runat= "server" OnClick="SaveBtn_Click" />
+  <asp:Button type="submit" id="DeleteBtn" class="btn btn-danger " Text = "Delete" runat= "server" OnClick="DeleteBtn_Click" />
   
 </form>
 
@@ -80,14 +80,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8"></div>
-            <table class="table">
+            <div class="col-md-8">  
+                <h1>Cars List</h1>
+                <asp:GridView runat="server" ID="Carlist" Class="table table-hover" AutoGenerateSelectButton>
+                    <AlternatingRowStyle BackColor="#0099FF" ForeColor="White" />
 
-
-                
-            </table>
-        </div>
-    </div>
+                </asp:GridView>
+            </div>
+           
+        
+    
 
 
 </asp:Content>
