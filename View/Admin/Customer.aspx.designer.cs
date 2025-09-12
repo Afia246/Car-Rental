@@ -75,6 +75,7 @@ namespace onlinecarrental.View.Admin
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Label ErrorMsg;
 
         /// <summary>
@@ -85,6 +86,9 @@ namespace onlinecarrental.View.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SaveBtn;
+=======
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ErrorMsg;
+>>>>>>> e7ac5293f36f4e861df915d515d031954faf6ac6
 
         /// <summary>
         /// EditBtn control.
@@ -96,6 +100,18 @@ namespace onlinecarrental.View.Admin
         protected global::System.Web.UI.WebControls.Button EditBtn;
 
         /// <summary>
+<<<<<<< HEAD
+=======
+        /// SaveBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SaveBtn;
+
+        /// <summary>
+>>>>>>> e7ac5293f36f4e861df915d515d031954faf6ac6
         /// DeleteBtn control.
         /// </summary>
         /// <remarks>
@@ -105,12 +121,20 @@ namespace onlinecarrental.View.Admin
         protected global::System.Web.UI.WebControls.Button DeleteBtn;
 
         /// <summary>
+<<<<<<< HEAD
         /// CustomerList control.
+=======
+        /// Customerlist control.
+>>>>>>> e7ac5293f36f4e861df915d515d031954faf6ac6
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.GridView CustomerList;
+=======
+        protected global::System.Web.UI.WebControls.GridView Customerlist;
+>>>>>>> e7ac5293f36f4e861df915d515d031954faf6ac6
     }
 }

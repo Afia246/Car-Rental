@@ -116,3 +116,8 @@ C:\Users\ASUS\Downloads\onlinecarrental\onlinecarrental\onlinecarrental\bin\rosl
 C:\Users\ASUS\Downloads\onlinecarrental\onlinecarrental\onlinecarrental\bin\roslyn\vbc.rsp
 C:\Users\ASUS\Downloads\onlinecarrental\onlinecarrental\onlinecarrental\bin\roslyn\VBCSCompiler.exe
 C:\Users\ASUS\Downloads\onlinecarrental\onlinecarrental\onlinecarrental\bin\roslyn\VBCSCompiler.exe.config
+<<<<<<< HEAD
+=======
+C:\Users\User\Source\Repos\Car-Rental(2)\obj\Debug\onlinecarrental.dll
+C:\Users\User\Source\Repos\Car-Rental(2)\obj\Debug\onlinecarrental.pdb
+>>>>>>> e7ac5293f36f4e861df915d515d031954faf6ac6

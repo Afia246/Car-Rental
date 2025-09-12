@@ -18,11 +18,15 @@ namespace onlinecarrental.Models
 
         public Functions()
         {
+<<<<<<< HEAD
             ConnStr = @"Data Source=(LocalDB)\MSSQLLocalDB;
                       AttachDbFilename=C:\Users\ASUS\Downloads\CarRentalDbASP - Copy.mdf;
                       Integrated Security=True;
                       Connect Timeout=30;";
 
+=======
+            ConnStr = @"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ASUS\\OneDrive\\Documents\\CarRentalDbASP.mdf;Integrated Security=True;Connect Timeout=30";
+>>>>>>> e7ac5293f36f4e861df915d515d031954faf6ac6
             Conn = new SqlConnection(ConnStr);
             cmd = new SqlCommand();
             cmd.Connection = Conn;
