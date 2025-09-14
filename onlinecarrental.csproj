@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Img\Car-High-Quality-PNG.png" />
+    <Content Include="Assets\Img\car-png--2000.png" />
     <Content Include="Assets\Img\Car-PNG-Clipart.png" />
     <Content Include="Assets\Img\Car-PNG-File.png" />
     <Content Include="Assets\Img\Car-PNG-HD.png" />
@@ -76,6 +77,7 @@
     <Content Include="Assets\Img\Exotic-Car-PNG-Images-HD.png" />
     <Content Include="Assets\Img\Exotic-Car.png" />
     <Content Include="Assets\Img\image profile.gif" />
+    <Content Include="Assets\Img\red-sports-car-png-1 %281%29.png" />
     <Content Include="Assets\Img\rental car.jpg" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.css" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.min.css" />
@@ -95,15 +97,19 @@
     <Content Include="View\Admin\Rents.aspx" />
     <Content Include="View\Admin\Report.aspx" />
     <Content Include="View\Admin\Returns.aspx" />
+    <Content Include="View\Customer\Cars.aspx" />
+    <Content Include="View\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Functions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Admin\AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\Admin\AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
@@ -157,6 +163,27 @@
     <Compile Include="View\Admin\Returns.aspx.designer.cs">
       <DependentUpon>Returns.aspx</DependentUpon>
     </Compile>
+    <Compile Include="View\Customer\CustomerMaster.Master.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Customer\CustomerMaster.Master.designer.cs">
+      <DependentUpon>CustomerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer\Cars.aspx.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Customer\Cars.aspx.designer.cs">
+      <DependentUpon>Cars.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Libraries\css\bootstrap-grid.css.map" />
@@ -171,6 +198,7 @@
     <Content Include="Assets\Libraries\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <Content Include="View\Admin\AdminMaster.Master" />
+    <Content Include="View\Customer\CustomerMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -181,8 +209,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\CSS\" />
-    <Folder Include="Models\" />
-    <Folder Include="View\Customer\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
