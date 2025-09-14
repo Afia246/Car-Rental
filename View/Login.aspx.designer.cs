@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace onlinecarrental.View.Admin
+namespace onlinecarrental.View
 {
 
 
-    public partial class Customer
+    public partial class Login
     {
 
         /// <summary>
@@ -24,40 +24,13 @@ namespace onlinecarrental.View.Admin
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// CustIdHidden control.
+        /// UserNameTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField CustIdHidden;
-
-        /// <summary>
-        /// NameTb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText NameTb;
-
-        /// <summary>
-        /// AddTb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText AddTb;
-
-        /// <summary>
-        /// PhoneTb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText PhoneTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText UserNameTb;
 
         /// <summary>
         /// PasswordTb control.
@@ -66,7 +39,25 @@ namespace onlinecarrental.View.Admin
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText PasswordTb;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword PasswordTb;
+
+        /// <summary>
+        /// CustRadio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton CustRadio;
+
+        /// <summary>
+        /// AdminRadio control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton AdminRadio;
 
         /// <summary>
         /// ErrorMsg control.
@@ -78,39 +69,12 @@ namespace onlinecarrental.View.Admin
         protected global::System.Web.UI.WebControls.Label ErrorMsg;
 
         /// <summary>
-        /// SaveBtn control.
+        /// LoginBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveBtn;
-
-        /// <summary>
-        /// EditBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EditBtn;
-
-        /// <summary>
-        /// DeleteBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button DeleteBtn;
-
-        /// <summary>
-        /// CustomerList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CustomerList;
+        protected global::System.Web.UI.WebControls.Button LoginBtn;
     }
 }
