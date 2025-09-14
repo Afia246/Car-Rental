@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Assets\Img\Car-High-Quality-PNG.png" />
     <Content Include="Assets\Img\car-png--2000.png" />
+    <Content Include="Assets\Img\car-png--2000.png" />
     <Content Include="Assets\Img\Car-PNG-Clipart.png" />
     <Content Include="Assets\Img\Car-PNG-File.png" />
     <Content Include="Assets\Img\Car-PNG-HD.png" />
@@ -77,6 +78,7 @@
     <Content Include="Assets\Img\Exotic-Car-PNG-Images-HD.png" />
     <Content Include="Assets\Img\Exotic-Car.png" />
     <Content Include="Assets\Img\image profile.gif" />
+    <Content Include="Assets\Img\red-sports-car-png-1 %281%29.png" />
     <Content Include="Assets\Img\red-sports-car-png-1 %281%29.png" />
     <Content Include="Assets\Img\rental car.jpg" />
     <Content Include="Assets\Libraries\css\bootstrap-grid.css" />
@@ -106,9 +108,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Functions.cs" />
+    <Compile Include="Models\Functions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Admin\AdminMaster.Master.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="View\Admin\AdminMaster.Master.designer.cs">
@@ -198,6 +202,7 @@
     <Content Include="Assets\Libraries\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <Content Include="View\Admin\AdminMaster.Master" />
+    <Content Include="View\Customer\CustomerMaster.Master" />
     <Content Include="View\Customer\CustomerMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Customer/CustomerMaster.Master"
+<%@ Page Title="" Language="C#" MasterPageFile="~/View/Customer/CustomerMaster.Master"
     AutoEventWireup="true" CodeBehind="Cars.aspx.cs"
     Inherits="onlinecarrental.View.Customer.Cars" %>
 
