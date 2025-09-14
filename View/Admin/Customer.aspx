@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" 
+<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" 
     AutoEventWireup="true" CodeBehind="Customer.aspx.cs" 
     Inherits="onlinecarrental.View.Admin.Customer" enableEventValidation="false" %>
 
@@ -70,7 +70,31 @@
                     </asp:GridView>
                 </div>
 
+
+                <!-- RIGHT: Customers List -->
+                <div class="col-md-8">
+                    <h3 class="text-dark mb-3 text-center">Customers List</h3>
+                    <asp:GridView runat="server" ID="CustomerList" CssClass="table table-bordered table-hover w-100"
+                                  AutoGenerateSelectButton="true"
+                                  AutoGenerateColumns="false"
+                                  DataKeyNames="CustId"
+                                  OnSelectedIndexChanged="CustomerList_SelectedIndexChanged">
+
+                        <Columns>
+                            <asp:BoundField DataField="CustId" HeaderText="CustId" ReadOnly="true" />
+                            <asp:BoundField DataField="CustName" HeaderText="Name" />
+                            <asp:BoundField DataField="CustAdd" HeaderText="Address" />
+                            <asp:BoundField DataField="CustPhone" HeaderText="Phone" />
+                            <asp:BoundField DataField="CustPassword" HeaderText="Password" />
+                        </Columns>
+
+                        <AlternatingRowStyle BackColor="#f9f9f9" />
+                        <HeaderStyle BackColor="#007bff" ForeColor="White" Font-Bold="true" />
+                    </asp:GridView>
+                </div>
+
             </div>
         </div>
+    </form>
     </form>
 </asp:Content>

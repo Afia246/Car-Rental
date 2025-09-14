@@ -97,7 +97,6 @@
     <Content Include="View\Admin\Rents.aspx" />
     <Content Include="View\Admin\Report.aspx" />
     <Content Include="View\Admin\Returns.aspx" />
-    <Content Include="View\Customer\Cars.aspx" />
     <Content Include="View\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -163,20 +162,6 @@
     <Compile Include="View\Admin\Returns.aspx.designer.cs">
       <DependentUpon>Returns.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\Customer\CustomerMaster.Master.cs">
-      <DependentUpon>CustomerMaster.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Customer\CustomerMaster.Master.designer.cs">
-      <DependentUpon>CustomerMaster.Master</DependentUpon>
-    </Compile>
-    <Compile Include="View\Customer\Cars.aspx.cs">
-      <DependentUpon>Cars.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\Customer\Cars.aspx.designer.cs">
-      <DependentUpon>Cars.aspx</DependentUpon>
-    </Compile>
     <Compile Include="View\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -209,6 +194,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\CSS\" />
+    <Folder Include="View\Customer\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

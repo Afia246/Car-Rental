@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="onlinecarrental.View.Admin.Cars" enableEventValidation="false" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="onlinecarrental.View.Admin.Cars" enableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="mybody" runat="server">
     <form id="form1" runat="server">
         <div class="container mt-4">
@@ -57,6 +57,19 @@
                         <asp:Button ID="Button1" runat="server" Text="Delete" CssClass="btn btn-danger" OnClick="DeleteBtn_Click" />
                     </div>
                 </div>
+
+                <!-- RIGHT: Cars List -->
+                <div class="col-md-8">
+                    <h3 class="text-dark mb-3 text-center">Cars List</h3>
+                    <asp:GridView runat="server" ID="CarList" CssClass="table table-bordered table-hover w-100"
+                                  AutoGenerateSelectButton="true" AutoGenerateColumns="true"
+                                  DataKeyNames="CPlateNum"
+                                  OnSelectedIndexChanged="CarList_SelectedIndexChanged">
+                        <AlternatingRowStyle BackColor="#f9f9f9" />
+                        <HeaderStyle BackColor="#007bff" ForeColor="White" Font-Bold="true" />
+                    </asp:GridView>
+                </div>
+
 
                 <!-- RIGHT: Cars List -->
                 <div class="col-md-8">
