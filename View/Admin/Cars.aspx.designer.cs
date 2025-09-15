@@ -87,51 +87,31 @@ namespace onlinecarrental.View.Admin
         protected global::System.Web.UI.WebControls.DropDownList AvailableCb;
 
         /// <summary>
-        /// ErrorMsg control.
+        /// CarImageUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ErrorMsg;
+        protected global::System.Web.UI.WebControls.FileUpload CarImageUpload;
 
         /// <summary>
-        /// SaveBtn control.
+        /// ExistingPicUrl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveBtn;
+        protected global::System.Web.UI.WebControls.HiddenField ExistingPicUrl;
 
         /// <summary>
-        /// EditBtn control.
+        /// CarImgPreview control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EditBtn;
-
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
-        /// CarList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CarList;
-<<<<<<< HEAD
-=======
+        protected global::System.Web.UI.WebControls.Image CarImgPreview;
 
         /// <summary>
         /// ErrorMsg control.
@@ -177,6 +157,5 @@ namespace onlinecarrental.View.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView CarList;
->>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
     }
 }

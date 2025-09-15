@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Customer/CustomerMaster.Master" AutoEventWireup="true" CodeBehind="Cars.aspx.cs" Inherits="onlinecarrental.View.Customer.WebForm1" %>
-
-<asp:Content ID="Content1" ContentPlaceHolderID="mybody" runat="server">
-=======
-<%@ Page Title="" Language="C#" MasterPageFile="~/View/Customer/CustomerMaster.Master"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Customer/CustomerMaster.Master"
     AutoEventWireup="true" CodeBehind="Cars.aspx.cs"
     Inherits="onlinecarrental.View.Customer.Cars" %>
 
@@ -15,7 +10,11 @@
                        CssClass="img-fluid mb-3"
                        Style="max-height:160px;"
                        AlternateText="Cars" />
-            <h3 class="text-primary">Available Cars</h3>
+
+            <h3 class="text-primary">
+                Welcome, <asp:Label ID="CustName" runat="server" CssClass="fw-bold text-dark"></asp:Label>
+            </h3>
+            <h4 class="text-primary">Available Cars</h4>
         </div>
 
         <div class="row justify-content-center">
@@ -29,15 +28,23 @@
                     <HeaderStyle BackColor="#007bff" ForeColor="White" Font-Bold="true" />
                 </asp:GridView>
 
-                <!-- Date picker and Book button -->
-                <div class="mt-3 d-flex justify-content-between">
-                    <asp:TextBox ID="BookingDate" runat="server" CssClass="form-control w-50" 
-                                 placeholder="Select Date" TextMode="Date"></asp:TextBox>
+                <!-- Booking controls -->
+                <div class="mt-3 d-flex">
+                    <asp:TextBox ID="BookingDate" runat="server" CssClass="form-control"
+                                 placeholder="Select Booking Date" TextMode="Date"></asp:TextBox>
+
+                    <asp:TextBox ID="ReturnDate" runat="server" CssClass="form-control ms-3"
+                                 placeholder="Select Return Date" TextMode="Date"></asp:TextBox>
+
                     <asp:Button ID="BookBtn" runat="server" Text="Book" CssClass="btn btn-success ms-3"
                                 OnClick="BookBtn_Click" />
+                </div>
+
+                <!-- Error/Status message -->
+                <div class="mt-2">
+                    <asp:Label ID="ErrorMsg" runat="server" CssClass="fw-bold"></asp:Label>
                 </div>
             </div>
         </div>
     </div>
->>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
 </asp:Content>

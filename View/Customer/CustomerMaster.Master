@@ -1,84 +1,189 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CustomerMaster.master.cs" Inherits="onlinecarrental.View.Customer.CustomerMaster" %>
-
-<<<<<<< HEAD
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeFile="CustomerMaster.master.cs"
+    Inherits="onlinecarrental.View.Customer.CustomerMaster" %>
 
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css">
+  <meta charset="utf-8" />
+  <title>Customer — GreenMile Garage</title>
+
+  <!-- Bootstrap (local) -->
+  <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons (for profile/search icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Inter to match landing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+  <style>
+    /* ===== Same theme as landing ===== */
+    :root{
+      --site-bg:#E3E5DA;
+      --ink:#233836;
+      --link:#0E8F69;
+      --link-hover:#0b6f53;
+      --logo-desktop: 80px;
+      --logo-mobile: 62px;
+    }
+    html, body{
+      background:var(--site-bg);
+      color:var(--ink);
+      font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+
+    /* Navbar like landing */
+    .cly-navbar{
+      background:var(--site-bg) !important;
+      padding:.35rem 0;
+      border-bottom:1px solid #cfcfcf;
+      z-index:1030;
+    }
+    .cly-navbar .nav-link{
+      color:var(--ink) !important;
+      font-weight:600;
+      padding:.65rem .9rem;
+    }
+    .cly-navbar .nav-link:hover,
+    .cly-navbar .nav-link:focus{ color:var(--link) !important; }
+
+    .brand-logo{
+      height:var(--logo-desktop);
+      width:auto;
+      display:block;
+    }
+    @media (max-width: 991.98px){
+      .brand-logo{ height:var(--logo-mobile); }
+    }
+
+    /* Keep page content clear of sticky header */
+    .main-wrap{ padding-top: calc(var(--logo-desktop) + 18px); }
+    @media (max-width: 991.98px){
+      .main-wrap{ padding-top: calc(var(--logo-mobile) + 18px); }
+    }
+
+    /* Header search styling */
+    .header-search .form-control{
+      background:var(--site-bg);
+      color:var(--ink);
+      border:1px solid var(--ink);
+      height:40px;
+    }
+    .header-search .form-control::placeholder{ color:var(--ink); opacity:.6; }
+    .header-search .btn{
+      border-color:var(--ink);
+      color:var(--ink);
+      height:40px;
+    }
+    .header-search .btn:hover{
+      background:var(--ink);
+      color:#E3E5DA;
+      border-color:var(--ink);
+    }
+
+    /* Profile icon: brand color + a bit of spacing */
+    .profile-btn{ 
+      color: var(--ink) !important;      /* #233836 */
+    }
+    .profile-btn:hover,
+    .profile-btn:focus{
+      color: var(--link) !important;     /* #0E8F69 on hover */
+    }
+
+    /* Footer like landing */
+    .site-footer{background:#233836;color:#E3E5DA;padding:28px 0 0;margin-top:32px}
+    .site-footer a{color:#cfe6ff;text-decoration:none}
+    .site-footer a:hover{color:#fff;text-decoration:underline}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:12px 0;margin-top:14px;font-size:.9rem;color:#cfd7d4}
+  </style>
 </head>
+
 <body>
+  <!-- Master page must wrap everything in a form -->
+  <form id="form1" runat="server">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand" href="#">SSA Car Rental Service</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="Home.aspx">Cars</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Cars.aspx">Pending Rents</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Customer.aspx">Logout</a>
-      </li>
-        
-          <li class="nav-item">
-<a class="nav-link" href="Discount.aspx">Discount</a>
-   </li>
-          
-    </ul>
-  </div>
-</nav>
+    <!-- Header (sticky, like landing) -->
+    <nav class="navbar navbar-expand-lg cly-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="Home.aspx" aria-label="GreenMile">
+          <img src="../../Assets/Img/Greenmile.png" alt="GreenMile Garage" class="brand-logo" />
+        </a>
 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custNav"
+                aria-controls="custNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div id="custNav" class="collapse navbar-collapse">
+          <!-- Keep the same four buttons/links -->
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item active"><a class="nav-link" href="Cars.aspx">Cars</a></li>
+            <li class="nav-item"><a class="nav-link" href="PendingRentals.aspx">Pending Rents</a></li>
+            <li class="nav-item"><a class="nav-link" href="Discounts.aspx">Discount</a></li>
+            <li class="nav-item"><a class="nav-link" href="../Login.aspx">Logout</a></li>
+          </ul>
 
-    <asp:ContentPlaceHolder ID="mybody" runat="server">
-</asp:ContentPlaceHolder>
+          <!-- Search + Profile (right side on lg+, stacked in collapse on mobile) -->
+          <div class="ms-lg-3 d-flex align-items-center gap-2">
+            <!-- On lg+ show compact search -->
+            <form class="d-none d-lg-block" role="search" onsubmit="return false;">
+              <div class="input-group header-search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search" />
+                <button class="btn" type="button" title="Search">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
 
-
-   
-=======
-<!DOCTYPE html>
-<html>
-<head runat="server">
-    <title>SSA Car Rental Service</title>
-    <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css">
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-</head>
-<body>
-
-    <!-- Master page must wrap everything in a form -->
-    <form id="form1" runat="server">
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-            <a class="navbar-brand" href="#">SSA Car Rental Service</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="Home.aspx">Cars</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Cars.aspx">Pending Rents</a></li
-                    <li class="nav-item"><a class="nav-link" href="Discount.aspx">Discount</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Login.aspx">Logout</a></li>
-                </ul>
+            <!-- On mobile show full-width search inside collapse -->
+            <div class="d-lg-none w-100 my-2">
+              <div class="input-group header-search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search (mobile)" />
+                <button class="btn" type="button" title="Search">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
             </div>
-        </nav>
 
-        <!-- Content placeholder for content pages -->
-        <asp:ContentPlaceHolder ID="mybody" runat="server">
-        </asp:ContentPlaceHolder>
-    </form>
->>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
+            <!-- Profile icon (shifted a bit right, in brand green) -->
+            <a href="#" class="btn p-0 profile-btn ms-3" title="Profile">
+              <i class="bi bi-person-circle fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page body (spaced below sticky header) -->
+    <div class="main-wrap">
+      <asp:ContentPlaceHolder ID="mybody" runat="server"></asp:ContentPlaceHolder>
+    </div>
+
+    <!-- Footer (same style as landing) -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-6 small">
+            <strong>GreenMile Garage — Customer Area</strong><br />
+            Enjoy the same clean, readable theme across the site.
+          </div>
+          <div class="col-md-6 text-md-end small">
+            <a href="../Public/Landing.aspx">Back to site</a>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          &copy; <%: DateTime.Now.Year %> GreenMile Garage — All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+  </form>
+
+  <!-- Bootstrap JS (local) -->
+  <script src="../../Assets/Libraries/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

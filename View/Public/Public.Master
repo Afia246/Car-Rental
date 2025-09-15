@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="Public.Master.cs"
+    Inherits="onlinecarrental.View.Public.Public" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+  <meta charset="utf-8" />
+  <title>
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server">GreenMile Garage</asp:ContentPlaceHolder>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap (local) -->
+  <link href="<%= ResolveUrl("~/Assets/Libraries/css/bootstrap.min.css") %>" rel="stylesheet" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+  <!-- Dynamic CSS written from Public.Master.cs (includes header height + spacing) -->
+  <asp:Literal ID="DynamicCss" runat="server" Mode="PassThrough" />
+
+  <!-- Page-specific head content (optional) -->
+  <asp:ContentPlaceHolder ID="HeadExtra" runat="server" />
+</head>
+
+<body id="BodyEl" runat="server">
+  <form runat="server">
+    <!-- Navbar (sticky) -->
+    <nav class="navbar navbar-expand-lg cly-navbar sticky-top border-bottom">
+      <div class="container">
+       <a class="navbar-brand d-flex align-items-center" href="<%= ResolveUrl("~/Landing.aspx") %>">
+  <asp:Image ID="BrandLogo"
+             runat="server"
+             ImageUrl="~/Assets/Img/Greenmile.png"
+             CssClass="brand-logo" />
+</a>   <!-- <= ADD THIS LINE -->
+
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navClover"
+                aria-controls="navClover" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navClover" class="collapse navbar-collapse">
+          <ul class="navbar-nav mx-lg-auto">
+  <li class="nav-item"><a class="nav-link" href="<%= ResolveUrl("~/Landing.aspx") %>">Home</a></li>
+  <li class="nav-item"><a class="nav-link" href="<%= ResolveUrl("~/Landing.aspx") %>#company">About Us</a></li>
+  <li class="nav-item"><a class="nav-link" href="<%= ResolveUrl("~/Landing.aspx") %>#features">Services</a></li>
+  <li class="nav-item"><a class="nav-link" href="<%= ResolveUrl("~/Landing.aspx") %>#pricing">Pricing</a></li>
+  <li class="nav-item"><a class="nav-link" href="<%= ResolveUrl("~/Landing.aspx") %>#packages">Packages</a></li>
+  <li class="nav-item"><a class="nav-link" href="<%= ResolveUrl("~/Landing.aspx") %>#reviews">Reviews</a></li>
+  <li class="nav-item"><a class="nav-link" href="<%= ResolveUrl("~/Contact.aspx") %>">Contact</a></li>
+</ul>
+
+<!-- Right side actions -->
+<div class="d-flex gap-2 ms-lg-3">
+  <a class="btn btn-outline-success" href="<%= ResolveUrl("~/View/Login.aspx") %>">Log in</a>
+  <a class="btn btn-success" href="<%= ResolveUrl("~/Register.aspx") %>">Register</a>
+</div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page body (spacer wrapper prevents overlap with sticky header) -->
+    <div class="main-wrap">
+      <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-top mt-5 py-4">
+      <div class="container d-flex flex-wrap gap-3 justify-content-between align-items-center small">
+        <div class="text-muted">&copy; <%: DateTime.Now.Year %> GreenMile Garage</div>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link px-2 text-muted" href="#">Privacy</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-muted" href="#">Terms</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-muted" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </form>
+
+  <!-- Bootstrap JS (local) -->
+  <script src="<%= ResolveUrl("~/Assets/Libraries/js/bootstrap.bundle.min.js") %>"></script>
+</body>
+</html>

@@ -7,74 +7,65 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace onlinecarrental.View.Customer
+namespace onlinecarrental.View.Public
 {
 
 
-    public partial class Cars
+    public partial class Public
     {
 
         /// <summary>
-        /// CarBanner control.
+        /// TitleContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image CarBanner;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder TitleContent;
 
         /// <summary>
-        /// CustName control.
+        /// DynamicCss control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CustName;
+        protected global::System.Web.UI.WebControls.Literal DynamicCss;
 
         /// <summary>
-        /// CarList control.
+        /// HeadExtra control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CarList;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadExtra;
 
         /// <summary>
-        /// BookingDate control.
+        /// BodyEl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox BookingDate;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl BodyEl;
 
         /// <summary>
-        /// ReturnDate control.
+        /// BrandLogo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ReturnDate;
+        protected global::System.Web.UI.WebControls.Image BrandLogo;
 
         /// <summary>
-        /// BookBtn control.
+        /// MainContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BookBtn;
-
-        /// <summary>
-        /// ErrorMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ErrorMsg;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
     }
 }

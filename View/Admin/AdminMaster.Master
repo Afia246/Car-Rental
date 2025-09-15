@@ -1,54 +1,134 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="onlinecarrental.View.Admin.AdminMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="AdminMaster.master.cs"
+    Inherits="onlinecarrental.View.Admin.AdminMaster" %>
 
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css">
+  <meta charset="utf-8" />
+  <title>Admin — GreenMile Garage</title>
+
+  <!-- Bootstrap (local) -->
+  <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css" />
+
+  <!-- Optional Inter font to match landing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Page-specific head content from children -->
+  <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+  <style>
+    /* ======= Same theme as landing ======= */
+    :root{
+    --site-bg:#E3E5DA;        /* same background as landing */
+    --ink:#233836;            /* deep green text */
+    --link:#0E8F69;
+    --link-hover:#0b6f53;
+    --logo-desktop: 68px;
+  --logo-mobile: 52px;
+  }
+  body{ background:var(--site-bg); color:var(--ink); }
+
+  /* Match the public header look */
+  .cly-navbar{
+    background:var(--site-bg) !important;
+    padding:.28rem 0;
+  }
+  .cly-navbar .nav-link{
+    color:#233836 !important;
+    font-weight:600;
+    padding:.55rem .85rem;
+  }
+  .cly-navbar .nav-link:hover{ color:#0E8F69 !important; }
+  .navbar-brand{ color:#233836 !important; font-weight:700; }
+    .brand-logo{
+      height:var(--logo-desktop);
+      width:auto;
+      display:block;
+    }
+    @media (max-width:991.98px){
+      .brand-logo{height:var(--logo-mobile)}
+    }
+
+    .cly-navbar .nav-link{
+      color:var(--ink) !important;
+      font-weight:600;
+      padding:.95rem .10rem;
+    }
+    .cly-navbar .nav-link:hover,
+    .cly-navbar .nav-link:focus{ color:var(--link) !important; }
+
+    /* Push content below sticky header */
+    .main-wrap{ padding-top: calc(var(--logo-desktop) + 10px); }
+@media (max-width:991.98px){
+  .main-wrap{ padding-top: calc(var(--logo-mobile) + 10px); }
+    }
+
+    /* Footer styled like landing */
+    .site-footer{background:#233836;color:#E3E5DA;padding:28px 0 0;margin-top:32px}
+    .site-footer a{color:#cfe6ff;text-decoration:none}
+    .site-footer a:hover{color:#fff;text-decoration:underline}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:12px 0;margin-top:14px;font-size:.9rem;color:#cfd7d4}
+  </style>
 </head>
+
 <body>
+  <!-- ==== Header ===== -->
+  <nav class="navbar navbar-expand-lg cly-navbar sticky-top order-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="Home.aspx" aria-label="GreenMile Admin">
+        <img src="../../Assets/Img/Greenmile.png" alt="GreenMile Garage" class="brand-logo" />
+      </a>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand" href="#">SSA Car Rental Service</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="Home.aspx">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Cars.aspx">Car</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Customer.aspx">Customer</a>
-      </li>
-        <li class="nav-item">
-     <a class="nav-link" href="Rents.aspx"> Rentals</a>
-      </li>
-      <li class="nav-item">
-    <a class="nav-link" href="Returns.aspx">Returns</a>
-       </li>
-          <li class="nav-item">
-<a class="nav-link" href="Discount.aspx">Discount</a>
-   </li>
-          <li class="nav-item">
-<a class="nav-link" href="Report.aspx">Report</a>
-   </li>
-    </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNav"
+              aria-controls="adminNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="adminNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-lg-3">
+          <li class="nav-item"><a class="nav-link" href="Home.aspx">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Cars.aspx">Cars</a></li>
+          <li class="nav-item"><a class="nav-link" href="Customer.aspx">Customer</a></li>
+          <li class="nav-item"><a class="nav-link" href="Rents.aspx">Rents</a></li>
+          <li class="nav-item"><a class="nav-link" href="Returns.aspx">Returns</a></li>
+          <li class="nav-item"><a class="nav-link" href="Discount.aspx">Discount</a></li>
+          <li class="nav-item"><a class="nav-link" href="Report.aspx">Report</a></li>
+          <li class="nav-item"><a class="nav-link" runat="server" href="~/View/Public/Landing.aspx">Logout</a></li>
+
+        </ul>
+
+        <!-- (Optional right side actions could go here) -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==== Page body from children ===== -->
+  <div class="main-wrap">
+    <asp:ContentPlaceHolder ID="mybody" runat="server"></asp:ContentPlaceHolder>
   </div>
-</nav>
 
+  <!-- ==== Footer (same style as landing) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-6 small">
+          <strong>GreenMile Garage — Admin Console</strong><br />
+          Faster fleet management with the same clean theme.
+        </div>
+        <div class="col-md-6 text-md-end small">
+          <a href="../Public/Landing.aspx">Back to site</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        &copy; <%: DateTime.Now.Year %> GreenMile Garage — All rights reserved.
+      </div>
+    </div>
+  </footer>
 
-
-    <asp:ContentPlaceHolder ID="mybody" runat="server">
-</asp:ContentPlaceHolder>
-
-
-   
+  <!-- Bootstrap JS (local) -->
+  <script src="../../Assets/Libraries/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

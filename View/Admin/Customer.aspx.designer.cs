@@ -60,6 +60,15 @@ namespace onlinecarrental.View.Admin
         protected global::System.Web.UI.HtmlControls.HtmlInputText PhoneTb;
 
         /// <summary>
+        /// EmailTb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl EmailTb;
+
+        /// <summary>
         /// PasswordTb control.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,33 @@ namespace onlinecarrental.View.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText PasswordTb;
+
+        /// <summary>
+        /// CustomerImageUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload CustomerImageUpload;
+
+        /// <summary>
+        /// ExistingPicUrl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField ExistingPicUrl;
+
+        /// <summary>
+        /// CustImgPreview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CustImgPreview;
 
         /// <summary>
         /// ErrorMsg control.
@@ -106,64 +142,11 @@ namespace onlinecarrental.View.Admin
 
         /// <summary>
         /// CustomerList control.
-<<<<<<< HEAD
-=======
-        /// PasswordTb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText PasswordTb;
-
-        /// <summary>
-        /// ErrorMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ErrorMsg;
-
-        /// <summary>
-        /// SaveBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveBtn;
-
-        /// <summary>
-        /// EditBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EditBtn;
-
-        /// <summary>
-        /// DeleteBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button DeleteBtn;
-
-        /// <summary>
-        /// CustomerList control.
->>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView CustomerList;
-<<<<<<< HEAD
-=======
-        protected global::System.Web.UI.WebControls.GridView CustomerList;
->>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
     }
 }
