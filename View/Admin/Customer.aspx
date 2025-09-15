@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" 
+=======
+<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" 
+    AutoEventWireup="true" CodeBehind="Customer.aspx.cs" 
+    Inherits="onlinecarrental.View.Admin.Customer" enableEventValidation="false" %>
+
+<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" 
+>>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
     AutoEventWireup="true" CodeBehind="Customer.aspx.cs" 
     Inherits="onlinecarrental.View.Admin.Customer" enableEventValidation="false" %>
 
@@ -15,6 +23,7 @@
                         <img runat="server" src="~/Assets/Img/imageProfile.gif" 
                              class="img-fluid mb-3" style="max-height:150px;" />
                     </div>
+<<<<<<< HEAD
 
                     <!-- Hidden field for CustId -->
                     <asp:HiddenField ID="CustIdHidden" runat="server" />
@@ -35,11 +44,74 @@
                     </div>
 
                     <div class="form-group mb-2">
+=======
+    <form id="form1" runat="server">
+        <div class="container mt-4">
+            <div class="row">
+
+                <!-- LEFT: Manage Customer Form -->
+                <div class="col-md-4">
+                    <div class="text-center mb-3">
+                        <h3 class="text-primary">Manage Customers</h3>
+                        <!-- fixed image path -->
+                        <img runat="server" src="~/Assets/Img/imageProfile.gif" 
+                             class="img-fluid mb-3" style="max-height:150px;" />
+                    </div>
+
+                    <!-- Hidden field for CustId -->
+                    <asp:HiddenField ID="CustIdHidden" runat="server" />
+
+                    <div class="form-group mb-2">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="NameTb" runat="server" placeholder="Enter customer name" />
+                    </div>
+                    <!-- Hidden field for CustId -->
+                    <asp:HiddenField ID="CustIdHidden" runat="server" />
+
+                    <div class="form-group mb-2">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="NameTb" runat="server" placeholder="Enter customer name" />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Address</label>
+                        <input type="text" class="form-control" id="AddTb" runat="server" placeholder="Enter customer address" />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" id="PhoneTb" runat="server" placeholder="Enter phone number" />
+                    </div>
+                    <div class="form-group mb-2">
+                        <label>Address</label>
+                        <input type="text" class="form-control" id="AddTb" runat="server" placeholder="Enter customer address" />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" id="PhoneTb" runat="server" placeholder="Enter phone number" />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Password</label>
+                        <input type="text" class="form-control" id="PasswordTb" runat="server" placeholder="Enter password" />
+                    </div>
+                    <div class="form-group mb-2">
+>>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
                         <label>Password</label>
                         <input type="text" class="form-control" id="PasswordTb" runat="server" placeholder="Enter password" />
                     </div>
 
                     <asp:Label ID="ErrorMsg" runat="server" ForeColor="Red" CssClass="d-block my-2"></asp:Label>
+<<<<<<< HEAD
+=======
+
+                    <div class="d-grid gap-2">
+                        <asp:Button ID="SaveBtn" runat="server" Text="Save" CssClass="btn btn-primary" OnClick="SaveBtn_Click" />
+                        <asp:Button ID="EditBtn" runat="server" Text="Edit" CssClass="btn btn-warning" OnClick="EditBtn_Click" />
+                        <asp:Button ID="DeleteBtn" runat="server" Text="Delete" CssClass="btn btn-danger" OnClick="DeleteBtn_Click" />
+                    <asp:Label ID="ErrorMsg" runat="server" ForeColor="Red" CssClass="d-block my-2"></asp:Label>
+>>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
 
                     <div class="d-grid gap-2">
                         <asp:Button ID="SaveBtn" runat="server" Text="Save" CssClass="btn btn-primary" OnClick="SaveBtn_Click" />

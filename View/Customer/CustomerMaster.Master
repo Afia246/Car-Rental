@@ -1,5 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CustomerMaster.master.cs" Inherits="onlinecarrental.View.Customer.CustomerMaster" %>
 
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 
@@ -44,5 +45,40 @@
 
 
    
+=======
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>SSA Car Rental Service</title>
+    <link rel="stylesheet" href="../../Assets/Libraries/css/bootstrap.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <!-- Master page must wrap everything in a form -->
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <a class="navbar-brand" href="#">SSA Car Rental Service</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="Home.aspx">Cars</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Cars.aspx">Pending Rents</a></li
+                    <li class="nav-item"><a class="nav-link" href="Discount.aspx">Discount</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Login.aspx">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Content placeholder for content pages -->
+        <asp:ContentPlaceHolder ID="mybody" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+>>>>>>> 97c99d5e149bbad80d6bf0ea4ad1baaeb7c82bbe
 </body>
 </html>
