@@ -1,77 +1,76 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" AutoEventWireup="true" CodeBehind="Customer.aspx.cs" Inherits="onlinecarrental.View.Admin.Customer" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Admin/AdminMaster.Master" 
+    AutoEventWireup="true" CodeBehind="Customer.aspx.cs" 
+    Inherits="onlinecarrental.View.Admin.Customer" enableEventValidation="false" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="mybody" runat="server">
+    <form id="form1" runat="server">
+        <div class="container mt-4">
+            <div class="row">
 
+                <!-- LEFT: Manage Customer Form -->
+                <div class="col-md-4">
+                    <div class="text-center mb-3">
+                        <h3 class="text-primary">Manage Customers</h3>
+                        <!-- fixed image path -->
+                        <img runat="server" src="~/Assets/Img/imageProfile.gif" 
+                             class="img-fluid mb-3" style="max-height:150px;" />
+                    </div>
 
-         <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="col"></div>
-                    <h3 class="text-primary"><img src="../../Assets/Img/image profile.gif"</h3>
-                    <div class="col"></div>
-                </div>
-                <div class="row">
-                    <div class="col d-grid">
+                    <!-- Hidden field for CustId -->
+                    <asp:HiddenField ID="CustIdHidden" runat="server" />
 
-                        <form runat="server">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Customer Name</label>
-    <input type="text" class="form-control" id="CustNameTb" placeholder="Enter Customer's Name" runat="server">
+                    <div class="form-group mb-2">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="NameTb" runat="server" placeholder="Enter customer name" />
+                    </div>
 
-  </div>
+                    <div class="form-group mb-2">
+                        <label>Address</label>
+                        <input type="text" class="form-control" id="AddTb" runat="server" placeholder="Enter customer address" />
+                    </div>
 
+                    <div class="form-group mb-2">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" id="PhoneTb" runat="server" placeholder="Enter phone number" />
+                    </div>
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">Customer Address</label>
-    <input type="text" class="form-control" id="AddTb" placeholder="Enter Customer's Address" runat="server">
-  
-  </div>
+                    <div class="form-group mb-2">
+                        <label>Password</label>
+                        <input type="text" class="form-control" id="PasswordTb" runat="server" placeholder="Enter password" />
+                    </div>
 
+                    <asp:Label ID="ErrorMsg" runat="server" ForeColor="Red" CssClass="d-block my-2"></asp:Label>
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">Customer Phone</label>
-    <input type="text" class="form-control" id="PhoneTb" placeholder="Enter Phone" runat="server">
-    
-  </div>
-
- <div class="form-group">
-   <label for="exampleInputEmail1">Customer Password</label>
-   <input type="text" class="form-control" id="Text1" placeholder="Enter Password" runat="server">
-   
- </div>
-
-
-<br />
-
-
-<br />
-
-
-  <button type="submit" class="btn btn-primary ">Edit</button>
-  <button type="submit" class="btn btn-primary ">Add</button>
-
-  <button type="submit" class="btn btn-danger ">Delete</button>
-
-
-
-
-
-</form>
-
-
+                    <div class="d-grid gap-2">
+                        <asp:Button ID="SaveBtn" runat="server" Text="Save" CssClass="btn btn-primary" OnClick="SaveBtn_Click" />
+                        <asp:Button ID="EditBtn" runat="server" Text="Edit" CssClass="btn btn-warning" OnClick="EditBtn_Click" />
+                        <asp:Button ID="DeleteBtn" runat="server" Text="Delete" CssClass="btn btn-danger" OnClick="DeleteBtn_Click" />
                     </div>
                 </div>
+
+                <!-- RIGHT: Customers List -->
+                <div class="col-md-8">
+                    <h3 class="text-dark mb-3 text-center">Customers List</h3>
+                    <asp:GridView runat="server" ID="CustomerList" CssClass="table table-bordered table-hover w-100"
+                                  AutoGenerateSelectButton="true"
+                                  AutoGenerateColumns="false"
+                                  DataKeyNames="CustId"
+                                  OnSelectedIndexChanged="CustomerList_SelectedIndexChanged">
+
+                        <Columns>
+                            <asp:BoundField DataField="CustId" HeaderText="CustId" ReadOnly="true" />
+                            <asp:BoundField DataField="CustName" HeaderText="Name" />
+                            <asp:BoundField DataField="CustAdd" HeaderText="Address" />
+                            <asp:BoundField DataField="CustPhone" HeaderText="Phone" />
+                            <asp:BoundField DataField="CustPassword" HeaderText="Password" />
+                        </Columns>
+
+                        <AlternatingRowStyle BackColor="#f9f9f9" />
+                        <HeaderStyle BackColor="#007bff" ForeColor="White" Font-Bold="true" />
+                    </asp:GridView>
+                </div>
+
             </div>
-            <div class="col-md-8"></div>
-            <table class="table">
-
-
-                
-            </table>
         </div>
-    </div>
-    
-
-
+    </form>
 </asp:Content>
-
