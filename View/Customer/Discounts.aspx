@@ -113,7 +113,7 @@
       <!-- 2 -->
       <div class="col-sm-6 col-lg-4">
         <div class="ev-card">
-          <img class="ev-img" src="https://images.unsplash.com/photo-1589391886645-d51941baf7e2?q=80&w=1200&auto=format&fit=crop" alt="Nissan Leaf EV">
+          <img class="ev-img" src="https://images.unsplash.com/photo-1711921127533-d227262a6705?q=80&w=991&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nissan Leaf EV">
           <div class="p-3">
             <div class="d-flex justify-content-between align-items-center">
               <div class="title">Nissan Leaf (EV)</div>
@@ -136,7 +136,7 @@
       <!-- 3 -->
       <div class="col-sm-6 col-lg-4">
         <div class="ev-card">
-          <img class="ev-img" src="https://images.unsplash.com/photo-1549921296-3f4734aa3b13?q=80&w=1200&auto=format&fit=crop" alt="Tesla Model 3">
+          <img class="ev-img" src="https://images.unsplash.com/photo-1695068515364-4cbc13e91e7f?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tesla Model 3">
           <div class="p-3">
             <div class="d-flex justify-content-between align-items-center">
               <div class="title">Tesla Model 3 (EV)</div>
@@ -159,7 +159,7 @@
       <!-- 4 -->
       <div class="col-sm-6 col-lg-4">
         <div class="ev-card">
-          <img class="ev-img" src="https://images.unsplash.com/photo-1651585760166-b19ba30593ee?q=80&w=1200&auto=format&fit=crop" alt="Hyundai Ioniq 5">
+          <img class="ev-img" src="https://images.unsplash.com/photo-1651311412157-d154a456746e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hyundai Ioniq 5">
           <div class="p-3">
             <div class="d-flex justify-content-between align-items-center">
               <div class="title">Hyundai Ioniq 5 (EV)</div>
@@ -182,7 +182,7 @@
       <!-- 5 -->
       <div class="col-sm-6 col-lg-4">
         <div class="ev-card">
-          <img class="ev-img" src="https://images.unsplash.com/photo-1549921296-3f4734aa3b13?q=80&w=1200&auto=format&fit=crop" alt="Toyota Aqua Hybrid">
+          <img class="ev-img" src="https://images.unsplash.com/photo-1623572435912-9940866dca4e?fm=jpg&amp;q=60&amp;w=3000&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="black sedan on road during daytime" alt="Toyota Aqua Hybrid">
           <div class="p-3">
             <div class="d-flex justify-content-between align-items-center">
               <div class="title">Toyota Aqua (Hybrid)</div>
@@ -205,7 +205,7 @@
       <!-- 6 -->
       <div class="col-sm-6 col-lg-4">
         <div class="ev-card">
-          <img class="ev-img" src="https://images.unsplash.com/photo-1593837743518-42b43f0b69d6?q=80&w=1200&auto=format&fit=crop" alt="MG ZS EV">
+          <img class="ev-img" src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MG ZS EV">
           <div class="p-3">
             <div class="d-flex justify-content-between align-items-center">
               <div class="title">MG ZS EV</div>

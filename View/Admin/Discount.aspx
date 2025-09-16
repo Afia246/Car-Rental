@@ -74,7 +74,7 @@
 
   
       <div class="discount-hero mb-4">
-        <h2>Save energy, save money</h2>
+        <h2>Electric Vehicles</h2>
         <p>Offer special discounts on EV rentals to encourage greener trips.</p>
       </div>
 
@@ -82,7 +82,7 @@
         
         <div class="col-md-6 col-lg-4">
           <div class="ev-card">
-            <img class="thumb" src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=1200&auto=format&fit=crop" alt="Tesla Model 3" />
+            <img class="thumb" src="https://images.unsplash.com/photo-1542362567-b07e54358753?q=80&w=1200&auto=format&fit=crop" alt="Tesla Model 3" />
             <div class="body">
               <h5>Tesla Model 3</h5>
               <div class="meta">Mid-size sedan • 5 seats • Auto</div>
@@ -106,7 +106,7 @@
         
         <div class="col-md-6 col-lg-4">
           <div class="ev-card">
-            <img class="thumb" src="https://images.unsplash.com/photo-1651555522854-c2c604a3e3b6?w=1200&auto=format&fit=crop" alt="Hyundai IONIQ 5" />
+            <img class="thumb" src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hyundai IONIQ 5" />
             <div class="body">
               <h5>Hyundai IONIQ 5</h5>
               <div class="meta">Crossover • 5 seats • Auto</div>
@@ -130,7 +130,7 @@
         
         <div class="col-md-6 col-lg-4">
           <div class="ev-card">
-            <img class="thumb" src="https://images.unsplash.com/photo-1611095972830-5f3e8b2cfe3b?w=1200&auto=format&fit=crop" alt="Nissan LEAF" />
+            <img class="thumb" src="https://images.unsplash.com/photo-1635451048957-3beb7175f57f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nissan LEAF" />
             <div class="body">
               <h5>Nissan LEAF</h5>
               <div class="meta">Compact • 5 seats • Auto</div>
@@ -153,7 +153,7 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="ev-card">
-            <img class="thumb" src="https://images.unsplash.com/photo-1662196369904-83aa133f0b90?w=1200&auto=format&fit=crop" alt="Kia Niro EV" />
+            <img class="thumb" src="https://images.unsplash.com/photo-1651311412157-d154a456746e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kia Niro EV" />
             <div class="body">
               <h5>Kia Niro EV</h5>
               <div class="meta">Crossover • 5 seats • Auto</div>
@@ -176,7 +176,7 @@
 
         <div class="col-md-6 col-lg-4">
           <div class="ev-card">
-            <img class="thumb" src="https://images.unsplash.com/photo-1694360169302-3a8fbcd6a87a?w=1200&auto=format&fit=crop" alt="BYD Atto 3" />
+            <img class="thumb" src="https://images.unsplash.com/photo-1695068515364-4cbc13e91e7f?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="BYD Atto 3" />
             <div class="body">
               <h5>BYD Atto 3</h5>
               <div class="meta">SUV • 5 seats • Auto</div>
@@ -200,7 +200,7 @@
         
         <div class="col-md-6 col-lg-4">
           <div class="ev-card">
-            <img class="thumb" src="https://images.unsplash.com/photo-1619767886558-efdc259cde1b?w=1200&auto=format&fit=crop" alt="MG ZS EV" />
+            <img class="thumb" src="https://images.unsplash.com/photo-1711921127533-d227262a6705?q=80&w=991&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MG ZS EV" />
             <div class="body">
               <h5>MG ZS EV</h5>
               <div class="meta">SUV • 5 seats • Auto</div>

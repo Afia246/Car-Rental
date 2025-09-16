@@ -20,14 +20,19 @@ namespace onlinecarrental.View.Customer
             if (!IsPostBack)
             {
                 ShowCars();
-
-                // Show customer name from session
                 if (Session["CustomerName"] != null)
                 {
                     CustName.Text = Session["CustomerName"].ToString();
                 }
             }
+            else
+            {
+                // On postback, rebind the GridView so DataKeys exist
+                CarList.DataSource = Conn.GetData("SELECT * FROM CarTbl WHERE Status='Available'");
+                CarList.DataBind();
+            }
         }
+
 
         private void ShowCars()
         {
@@ -39,21 +44,19 @@ namespace onlinecarrental.View.Customer
 
         protected void CarList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GridViewRow row = CarList.SelectedRow;
+            Session["SelectedCar"] = CarList.SelectedDataKey.Values["CPlateNum"].ToString();
+            Session["DailyPrice"] = Convert.ToInt32(CarList.SelectedDataKey.Values["Price"]);
 
-            // Selected car details
-            LNumber = row.Cells[1].Text;  // CPlateNum
-            DPrice = Convert.ToInt32(row.Cells[4].Text); // Price column
-
-            Session["SelectedCar"] = LNumber;
-            Session["DailyPrice"] = DPrice;
-
-            ErrorMsg.Text = "Car selected: " + LNumber + " (Price per day: " + DPrice + ")";
+            ErrorMsg.Text = "Selected Car: " + Session["SelectedCar"].ToString();
             ErrorMsg.ForeColor = System.Drawing.Color.Green;
         }
 
+
         protected void BookBtn_Click(object sender, EventArgs e)
         {
+            ErrorMsg.Text = "Book button clicked!";
+            ErrorMsg.ForeColor = System.Drawing.Color.Blue;
+
             try
             {
                 if (string.IsNullOrEmpty(BookingDate.Text) || string.IsNullOrEmpty(ReturnDate.Text))
